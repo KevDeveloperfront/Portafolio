@@ -1,16 +1,15 @@
-# í·‘â€í²» Portafolio 
+# ğŸ‘¨â€ğŸ’» Portafolio
 
-## Â¡Hola! Soy Kevin PÃ©rezí±‹
+## Â¡Hola! Soy Kevin PÃ©rez ğŸŒ
 
 - Soy un profesional en el Ã¡rea IT
-- Entusiasta en el desarrollo web, camino en el aprendizaje 
+- Entusiasta en el desarrollo web, camino en el aprendizaje
 
 En este espacio, comparto los proyectos en los que voy a ir trabajando, desde ideas personales hasta desafÃ­os mÃ¡s complejos. Mi objetivo es mostrar mi proceso de aprendizaje, las tecnologÃ­as que voy a ir dominando y cÃ³mo aplico mis conocimientos para resolver problemas.
 
 ---
 
-
-## í·± TecnologÃ­as
+## ğŸŒ TecnologÃ­as
 
 - HTML5
 - CSS3
@@ -19,4 +18,3 @@ En este espacio, comparto los proyectos en los que voy a ir trabajando, desde id
 - Kanban (GitHub Projects)
 
 ---
-

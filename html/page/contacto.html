@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<!-- Metadatos Importantes -->
@@ -17,7 +17,7 @@
 		integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Enlace a tu CSS Personalizado -->
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<link rel="icon" href="./favicon.ico" type="image/x-icon">
 	<title>Contacto</title>
 </head>
@@ -28,14 +28,16 @@
 		<nav class="navbar">
 			<div class="logo-container">
 				<a href="./index.html">
-					<img src="./assets/img/Portafolio logo.png" alt="Logo personal de Kevin Pérez" class="logo-img">
+					<img src="../assets/img/Portafolio-logo.png" alt="Logo personal de Kevin Pérez" class="logo-img">
 				</a>
 			</div>
-			<ul>
-				<li><a href="./index.html">Inicio</a></li>
-				+<li><a href="#about">Sobre Mí</a></li>
-				<li><a href="#projects">Proyectos</a></li>
-				<li><a href="#contacto.html">Contacto</a></li>
+			<button class="menu-toggle" aria-label="Abrir menú de navegación">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<ul class="nav-menu">
+				<li><a href="../../index.html">Inicio</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -45,7 +47,7 @@
 			<div class="contact-container">
 				<h2>Contacto</h2>
 				<p>¿Interesado en trabajar juntos? ¡Hablemos!</p>
-				<form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+				<form action="https://formsubmit.co/KevDeveloperfront@gmail.com" method="POST" class="contact-form">
 					<label for="name">Nombre:</label>
 					<input type="text" id="name" name="name" required placeholder="Tu nombre es?">
 
@@ -73,11 +75,12 @@
 		</div>
 		<div class="enlaceRapido">
 			<ul>
-				<li><a href="./index.html">Inicio</a></li>
+				<li><a href="../../index.html">Inicio</a></li>
 			</ul>
 		</div>
 		<p>&copy; 2024 Kevin Pérez. Todos los derechos reservados.</p>
 	</footer>
+	<script src="../js/main.js"></script>
 </body>
 
 </html>

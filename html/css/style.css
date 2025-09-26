@@ -267,6 +267,8 @@ body {
 	color: #333;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	transition: box-shadow 0.3s ease;
+	width: 100%;
+	/* Asegura full-width por defecto */
 }
 
 .contact-form input:focus,
@@ -291,11 +293,10 @@ body {
 	border: none;
 	cursor: pointer;
 	transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.contact-form .btn:hover {
-	background-color: #007bff;
-	color: #fff;
+	width: auto;
+	/* No full-width para el botón */
+	margin: 0 auto;
+	/* Centrado */
 }
 
 /* Footer */
@@ -345,98 +346,149 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-        flex-direction: column;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-        justify-content: center;
-        align-items: center; /* Centra las líneas horizontalmente */
-    }
+	.menu-toggle {
+		display: flex;
+		flex-direction: column;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 10px;
+		justify-content: center;
+		align-items: center;
+		/* Centra las líneas horizontalmente */
+	}
 
-    .menu-toggle span {
-        display: block; /* Asegura que los spans se rendericen como bloques */
-        width: 25px;
-        height: 3px;
-        background-color: #333;
-        margin: 3px 0;
-        transition: 0.3s;
-        border-radius: 2px; /* Suaviza las líneas */
-    }
+	.menu-toggle span {
+		display: block;
+		/* Asegura que los spans se rendericen como bloques */
+		width: 25px;
+		height: 3px;
+		background-color: #333;
+		margin: 3px 0;
+		transition: 0.3s;
+		border-radius: 2px;
+		/* Suaviza las líneas */
+	}
 
-    .navbar {
-        padding: 0.8rem 3%;
-        flex-direction: row; /* Mantiene logo y toggle en la misma línea */
-        gap: 0; /* Elimina gap para no separar */
-        justify-content: space-between; /* Logo a la izquierda, toggle a la derecha */
-    }
+	.navbar {
+		padding: 0.8rem 3%;
+		flex-direction: row;
+		/* Mantiene logo y toggle en la misma línea */
+		gap: 0;
+		/* Elimina gap para no separar */
+		justify-content: space-between;
+		/* Logo a la izquierda, toggle a la derecha */
+	}
 
-    .logo-container img {
-        height: 30px;
-    }
+	.logo-container img {
+		height: 30px;
+	}
 
-    .nav-menu {
-        position: fixed;
-        top: 60px; /* Ajustado a la altura de .navbar */
-        left: -100%;
-        width: 100%;
-        background-color: #fff;
-        flex-direction: column;
-        align-items: center;
-        padding: 1.5rem 0;
-        transition: left 0.3s ease;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        list-style: none; /* Elimina cualquier punto o bullet */
-    }
+	.nav-menu {
+		position: fixed;
+		top: 60px;
+		/* Ajustado a la altura de .navbar */
+		left: -100%;
+		width: 100%;
+		background-color: #fff;
+		flex-direction: column;
+		align-items: center;
+		padding: 1.5rem 0;
+		transition: left 0.3s ease;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+		list-style: none;
+		/* Elimina cualquier punto o bullet */
+	}
 
-    .nav-menu.active {
-        left: 0;
-    }
+	.nav-menu.active {
+		left: 0;
+	}
 
-    .nav-menu li {
-        margin: 1rem 0;
-        padding: 0; /* Elimina padding que pueda causar artefactos */
-        list-style: none; /* Doble seguridad contra bullets */
-    }
+	.nav-menu li {
+		margin: 1rem 0;
+		padding: 0;
+		/* Elimina padding que pueda causar artefactos */
+		list-style: none;
+		/* Doble seguridad contra bullets */
+	}
 
-    .nav-menu li a {
-        font-size: 1.1rem;
-        text-decoration: none;
-        color: #333;
-    }
+	.nav-menu li a {
+		font-size: 1.1rem;
+		text-decoration: none;
+		color: #333;
+	}
 
-    .inicio {
-        padding: 50px 5%; /* Menos padding vertical */
-    }
+	.inicio {
+		padding: 50px 5%;
+		/* Menos padding vertical */
+	}
 
-    .inicio h1 {
-        font-size: 2rem;
-    }
+	.inicio h1 {
+		font-size: 2rem;
+	}
 
-    .inicio .Portafolio {
-        font-size: 1.2rem;
-    }
+	.inicio .Portafolio {
+		font-size: 1.2rem;
+	}
 
-    .cards {
-        grid-template-columns: 1fr;
-    }
+	.cards {
+		grid-template-columns: 1fr;
+	}
 
-    .contact h2 {
-        font-size: 2rem;
-    }
+	.contact h2 {
+		font-size: 2rem;
+	}
 
-    .contact-form {
-        padding: 0 10px;
-    }
+	.contact-form {
+		padding: 0 10px;
+	}
 
-    .social-icons a {
-        font-size: 1.5rem;
-    }
+	.social-icons a {
+		font-size: 1.5rem;
+	}
 
-    .enlaceRapido ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+	.enlaceRapido ul {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	/* Ajustes específicos para la página de contacto */
+	.contact {
+		padding: 50px 5%;
+		/* Menos padding vertical para compactar */
+	}
+
+	.contact-container {
+		padding: 0 10px;
+		/* Padding lateral para evitar bordes pegados */
+	}
+
+	.contact p {
+		font-size: 1rem;
+		/* Reducir tamaño para móviles */
+		margin-bottom: 20px;
+	}
+
+	.contact-form label {
+		font-size: 1rem;
+		/* Reducir tamaño */
+	}
+
+	.contact-form input,
+	.contact-form textarea {
+		padding: 10px;
+		/* Padding más compacto */
+		font-size: 0.9rem;
+	}
+
+	.contact-form textarea {
+		min-height: 100px;
+		/* Altura mínima más pequeña */
+	}
+
+	.contact-form .btn {
+		padding: 10px 25px;
+		/* Botón más compacto */
+		font-size: 0.9rem;
+	}
 }

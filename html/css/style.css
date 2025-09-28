@@ -387,7 +387,6 @@ body {
 	.nav-menu {
 		position: fixed;
 		top: 60px;
-		/* Ajustado a la altura de .navbar */
 		left: -100%;
 		width: 100%;
 		background-color: #fff;
@@ -397,7 +396,6 @@ body {
 		transition: left 0.3s ease;
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 		list-style: none;
-		/* Elimina cualquier punto o bullet */
 	}
 
 	.nav-menu.active {
